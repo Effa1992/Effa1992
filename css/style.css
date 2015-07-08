@@ -231,8 +231,8 @@ main section:after {
 
 .social {
     position: absolute;
-    width: 300px;
-    left: 10px;
+    width: 145px;
+    left: 70px;
     bottom: 100px;
 }
 
@@ -241,13 +241,27 @@ main section:after {
     height: 30px;
     display: inline-block;
     background: url('../img/sm.png') no-repeat scroll transparent;
+    margin: 0 3px;
 }
 
 .social a:hover {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
     background: url('../img/sm_hover.png') no-repeat scroll transparent;
+}
+
+.social a.twitter {
+    background-position: -120px 0;
+}
+
+.social a.facebook {
+    background-position: 0 0;
+}
+
+.social a.google {
+    background-position: -40px 0;
+}
+
+.social a.rss {
+    background-position: -200px 0;
 }
 /**
  * стили для мобильных
