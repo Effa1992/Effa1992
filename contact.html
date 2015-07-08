@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Подключаем css reset
+     тут описано зачем это нужно - http://habrahabr.ru/post/45296/ -->
+    <link rel='stylesheet' type='text/css' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <title></title>
+</head>
+<body>
+<aside>
+    <a href="/" id="logo"></a>
+    <nav>
+        <a href="/" class="active">Игры</a>
+
+        <a href="inner.html">О нас</a>
+
+        <a href="inner.html">Вакансии</a>
+
+        <a href="inner.html">Форум</a>
+
+        <a href="contact.html">Контакты</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleNav();"></button>
+    <script>
+        function toggleNav () {
+            var nav = document.getElementsByTagName('nav')[0];
+            nav.className = nav.className == 'block' ? '' : 'block';
+        }
+    </script>
+</aside>
+<main>
+    <div class="inner-content">
+        <h1>Контакты</h1>
+
+        <h2>По вопросам трудоустройства</h2>
+        <p>Телефон: +7 (351) 248 84 63</p>
+        <p>E-mail: job@itsrealgames.com</p>
+        <h2>Техподдержка</h2>
+        <p>Форум: forum.itsrealgames.com</p>
+        <p>E-mail: feedback@itsrealgames.com</p>
+
+        <p>По вопросам сотрудничества пишите на электронную почту.</p>
+
+        <p>Россия, г. Челябинск, пр. Победы, 160, 5 этаж.</p>
+        <div id="map-wrapper"></div>
+    </div>
+
+    <script type="text/javascript" src="http://maps.api.2gis.ru/1.0"></script>
+    <script>
+
+        DG.autoload(function() {
+            var myMap = new DG.Map('map-wrapper');
+            myMap.setCenter(new DG.GeoPoint(61.40492, 55.18577),15);
+            myMap.controls.add(new DG.Controls.Zoom());
+
+            var myBalloon = new DG.Balloons.Common({
+                geoPoint: new DG.GeoPoint(61.40492, 55.18577),
+                contentHtml: 'Real Games<br>г. Челябинск, пр. Победы, 160, 5 этаж'
+            });
+            var myMarker = new DG.Markers.Common({
+                geoPoint: new DG.GeoPoint(61.40492, 55.18577),
+                clickCallback: function() {
+                    if (! myMap.balloons.getDefaultGroup().contains(myBalloon)) {
+                        myMap.balloons.add(myBalloon);
+                    } else {
+                        myBalloon.show();
+                    }
+                }
+            });
+            myMap.markers.add(myMarker);
+        });
+
+    </script>
+</main>
+</body>
+</html>

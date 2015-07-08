@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Подключаем css reset
+     тут описано зачем это нужно - http://habrahabr.ru/post/45296/ -->
+    <link rel='stylesheet' type='text/css' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <title></title>
+</head>
+<body>
+<aside>
+    <a href="index.html" id="logo"></a>
+    <nav>
+        <a href="index.html" class="active">Игры</a>
+
+        <a href="inner.html">О нас</a>
+
+        <a href="inner.html">Вакансии</a>
+
+        <a href="inner.html">Форум</a>
+
+        <a href="contact.html">Контакты</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleNav();"></button>
+    <script>
+        function toggleNav () {
+            var nav = document.getElementsByTagName('nav')[0];
+            nav.className = nav.className == 'block' ? '' : 'block';
+        }
+    </script>
+</aside>
+<main>
+    <div class="inner">
+        <div class="inner-header slide_1">
+            <h1>трагедия белок</h1>
+            <div class="slider">
+                <span class="left"></span><!--
+                --><span class="square"></span><!--
+                --><a href="inner2.html" class="right"></a>
+            </div>
+        </div>
+        <div class="inner-content">
+            <p>Динамичная мультиплеерная игра с веселыми Белками, спасающимися от катастрофы.
+                Ты бегаешь по разнообразным уровням вместе с толпой других Белочек,</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>

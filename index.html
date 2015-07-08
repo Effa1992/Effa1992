@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Подключаем css reset
+     тут описано зачем это нужно - http://habrahabr.ru/post/45296/ -->
+    <link rel='stylesheet' type='text/css' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <title></title>
+</head>
+<body>
+<aside>
+    <a href="/" id="logo"></a>
+    <nav>
+        <a href="/" class="active">Игры</a>
+
+        <a href="inner.html">О нас</a>
+
+        <a href="inner.html">Вакансии</a>
+
+        <a href="inner.html">Форум</a>
+
+        <a href="contact.html">Контакты</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleNav();"></button>
+    <script>
+        function toggleNav () {
+            var nav = document.getElementsByTagName('nav')[0];
+            nav.className = nav.className == 'block' ? '' : 'block';
+        }
+    </script>
+    <div class="social">
+        <a href="http://twitter.com" class="twitter"></a><!--
+        --><a href="http://twitter.com" class="facebook"></a><!--
+        --><a href="http://twitter.com" class="google"></a><!--
+        --><a href="http://twitter.com" class="rss"></a>
+    </div>
+</aside>
+<main>
+        <section class="slide_1">
+            <a href="inner.html" class="google-play"></a>
+            <a href="inner.html" class="other">Подробнее</a>
+        </section>
+        <section class="slide_2">
+            <a href="inner.html" class="google-play"></a>
+            <a href="inner.html" class="other">Подробнее</a>
+        </section>
+        <section class="slide_1">
+            <a href="inner.html" class="google-play"></a>
+            <a href="inner.html" class="other">Подробнее</a>
+        </section>
+        <section class="slide_2">
+            <a href="inner.html" class="google-play"></a>
+            <a href="inner.html" class="other">Подробнее</a>
+        </section>
+    </main>
+</body>
+</html>

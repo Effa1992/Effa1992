@@ -1,0 +1,402 @@
+@font-face {
+    font-family: "RalewayRegular";
+    src: url("../fonts/RalewayRegular.eot");
+    src: url("../fonts/RalewayRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RalewayRegular.woff") format("woff"),
+    url("../fonts/RalewayRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;}
+
+@font-face {
+    font-family: "RalewaySemiBold";
+    src: url("../fonts/RalewaySemiBold.eot");
+    src: url("../fonts/RalewaySemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RalewaySemiBold.woff") format("woff"),
+    url("../fonts/RalewaySemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;}
+
+@font-face {
+    font-family: "RalewayBold";
+    src: url("../fonts/RalewayBold.eot");
+    src: url("../fonts/RalewayBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RalewayBold.woff") format("woff"),
+    url("../fonts/RalewayBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@-ms-viewport{
+    width: device-width;
+}
+body, html {
+    width: 100%;
+    font: 15px/15px RalewayRegular;
+}
+
+body, html, aside {
+    height: 100%;
+}
+h1 {
+    margin: 10px 0 10px;
+    font: bold 32px/32px RalewaySemiBold;
+}
+h2 {
+    margin: 40px 0 10px;
+    font: bold 24px/24px RalewaySemiBold;
+}
+p {
+    margin: 10px 0;
+    font: 15px/18px RalewayRegular;
+}
+
+ul {
+    margin: 0 0 0 19px;
+    list-style: inherit;
+}
+
+ul li {
+    margin: 10px 0;
+    font: 14px/18px RalewayRegular;
+}
+aside {
+    width: 300px;
+    position: fixed;
+}
+
+aside nav {
+    margin: 0 0 0 33px;
+}
+
+aside nav a {
+    color: #4c4c4c;
+    text-decoration: none;
+    display: block;
+    margin: 40px 0 0 0;
+}
+
+aside nav a:hover {
+    color: #ccc;
+}
+
+aside nav a.active {
+    color: #0a0a0a;
+}
+
+#logo {
+    background: url("../img/logo.png") no-repeat scroll right 0 transparent;
+    width: 243px;
+    height: 92px;
+    display: block;
+}
+
+main {
+    height: 100%;
+    background: none #f6f6f6;
+}
+
+main section {
+    width: 100%;
+    max-width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+main section:after {
+    content: ' ';
+    background: url("../img/ribbon.png") repeat-x scroll 0 0 transparent;
+    position: absolute;
+    height: 124px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.slide_1 {
+    background: url("../img/work1.jpg") no-repeat scroll 0 0 transparent;
+    background-size: cover;
+}
+
+.slide_2 {
+    background: url("../img/work2.jpg") no-repeat scroll 0 0 transparent;
+    background-size: cover;
+}
+
+.google-play, .other {
+    position: absolute;
+}
+
+.google-play {
+    background: url("../img/google-play.png") no-repeat scroll 0 0 transparent;
+    width: 240px;
+    height: 79px;
+    display: block;
+    z-index: 1;
+}
+
+.other {
+    font: 14px/18px RalewaySemiBold;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    background: none #fff;
+    border: 3px solid #000;
+    box-shadow: 0 1px 1px #000;
+    padding: 6px 14px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+#map-wrapper {
+    width: 100%;
+    margin: 30px auto;
+    height: 300px;
+}
+
+.inner {
+    margin: 0 auto;
+    background: none #fff;
+    width: 95%;
+    height: 100%;
+}
+
+.inner-header {
+    margin: 0 -2.5%;
+    height: 350px;
+    position: relative;
+}
+
+.inner-header h1 {
+    left: 2.5%;
+    bottom: 0;
+    padding: 10px 0;
+    background: none rgba(255, 255, 255, 0.40);
+    width: 95%;
+    position: absolute;
+    margin: 0;
+    text-transform: uppercase;
+    text-indent: 20px;
+    color: #333;
+    font: bold 30px/30px RalewaySemiBold;
+}
+.inner-content {
+    height: 100%;
+    padding: 40px 35px 10px;
+    background: none #fff;
+}
+
+.slider {
+    position: absolute;
+    width: 130px;
+    bottom: 50px;
+    right: 12px;
+}
+
+.slider .left,
+.slider .square,
+.slider .right {
+    background: url('../img/p_navigation.png') no-repeat scroll transparent;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.slider a.left,
+.slider a.square,
+.slider a.right {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.slider span.left,
+.slider span.square,
+.slider span.right {
+    opacity: .5;
+}
+
+.slider a.left:hover ,
+.slider a.square:hover ,
+.slider a.right:hover  {
+    opacity: 1;
+}
+
+.slider .left{
+    background-position: 0 0;
+}
+.slider .square{
+    background-position: -40px 0;
+}
+.slider .right {
+    background-position: -81px 0;
+}
+
+.social {
+    position: absolute;
+    width: 300px;
+    left: 10px;
+    bottom: 100px;
+}
+
+.social a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url('../img/sm.png') no-repeat scroll transparent;
+}
+
+.social a:hover {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url('../img/sm_hover.png') no-repeat scroll transparent;
+}
+/**
+ * стили для мобильных
+ */
+@media only screen and (max-width: 1024px) {
+
+    aside, main {
+        width: 100%;
+    }
+    aside {
+        height: initial;
+        background: none #fff;
+        z-index: 2;
+        top: 0;
+        position: relative;
+    }
+    #logo {
+        display: inline-block;
+        vertical-align: top;
+        zoom: .6;
+        margin: 20px 0 20px 40px;
+    }
+    aside nav {
+        height: 0;
+        overflow: hidden;
+        background-color: #fff;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        border: 1px solid #F4F4F4;
+        -webkit-transition: 1s ease-out;
+        -moz-transition: 1s ease-out;
+        -o-transition: 1s ease-out;
+        transition: 1s ease-out;
+    }
+    aside nav.block {
+        height: 230px;
+        -webkit-transition: 1s ease-out;
+        -moz-transition: 1s ease-out;
+        -o-transition: 1s ease-out;
+        transition: 1s ease-out;
+    }
+    aside nav a {
+        border-top: 1px solid #F4F4F4;
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+    }
+    /*aside nav {*/
+        /*display: inline-block;*/
+        /*height: 100px;*/
+        /*text-align: justify;*/
+    /*}*/
+    /*aside nav a {*/
+        /*display: inline-block;*/
+        /*margin: 0;*/
+        /*line-height: 100px;*/
+        /*padding: 0 5px;*/
+    /*}*/
+    /*aside nav a.active:before {*/
+        /*content: normal;*/
+    /*}*/
+
+    .google-play {
+        background: url("../img/google-play.png") no-repeat scroll 0 0 transparent;
+        background-size: cover;
+        width: 170px;
+        height: 56px;
+        bottom: 55px;
+        right: 50%;
+        margin: 0 -100px 0 0;
+    }
+    .other {
+        bottom: 10px;
+        right: 50%;
+        margin: 0 -72px 0 0;
+    }
+
+    .menu-toggle {
+        background: url("../img/menu_icons.png") no-repeat scroll 0 0 transparent;
+        width: 40px;
+        height: 40px;
+        display: block;
+        outline: none;
+        border: none;
+        position: absolute;
+        right: 26px;
+        top: 20px;
+        cursor: pointer;
+        opacity: .5;
+        -webkit-transition: .2s ease-in;
+        -moz-transition: .2s ease-in;
+        -o-transition: .2s ease-in;
+        transition: .2s ease-in;
+    }
+
+    .menu-toggle:hover {
+        opacity: 1;
+        -webkit-transition: .2s ease-in;
+        -moz-transition: .2s ease-in;
+        -o-transition: .2s ease-in;
+        transition: .2s ease-in;
+    }
+
+    .menu-toggle.active {
+        background: url("../img/menu_icons.png") no-repeat scroll -40px 0 transparent;
+        width: 40px;
+        height: 40px;
+        display: block;
+        outline: none;
+        border: none;
+    }
+    .social {
+        display: none;
+    }
+}
+
+/**
+ * стили для десктопа
+ */
+@media screen and (min-width: 1025px) {
+    aside {
+        background: none #fff;
+        z-index: 2;
+    }
+
+    main {
+        margin: 0 0 0 300px;
+    }
+
+    #logo {
+        margin: 100px auto 0;
+    }
+
+    .google-play {
+        left: 50%;
+        margin: 0 0 0 -120px;
+        bottom: 23px;
+    }
+
+
+    .other {
+        bottom: 40px;
+        right: 50px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
