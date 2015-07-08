@@ -231,7 +231,7 @@ main section:after {
 
 .social {
     position: absolute;
-    width: 145px;
+    width: 148px;
     left: 70px;
     bottom: 100px;
 }
@@ -249,7 +249,7 @@ main section:after {
 }
 
 .social a.twitter {
-    background-position: -120px 0;
+    background-position: -93px 0;
 }
 
 .social a.facebook {
@@ -257,11 +257,11 @@ main section:after {
 }
 
 .social a.google {
-    background-position: -40px 0;
+    background-position: -31px 0;
 }
 
 .social a.rss {
-    background-position: -200px 0;
+    background-position: -155px 0;
 }
 /**
  * стили для мобильных
