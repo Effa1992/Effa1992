@@ -7,6 +7,18 @@
      тут описано зачем это нужно - http://habrahabr.ru/post/45296/ -->
     <link rel='stylesheet' type='text/css' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='css/carusel/owl.carousel.css'>
+    <link rel='stylesheet' type='text/css' href='css/carusel/owl.transitions.css'>
+    <link rel='stylesheet' type='text/css' href='css/carusel/owl.theme.css'>
+    <style>
+        #owl-demo .item img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <title></title>
 </head>
 <body>
@@ -19,7 +31,7 @@
 
         <a href="vacancy.html">Вакансии</a>
 
-        <a href="inner.html">Форум</a>
+        <a href="http://forum.itsrealgames.com/">Форум</a>
 
         <a href="contact.html">Контакты</a>
     </nav>
@@ -33,19 +45,44 @@
 </aside>
 <main>
     <div class="inner">
-        <div class="inner-header slide_1">
-            <h1>трагедия белок</h1>
-            <div class="slider">
-                <span class="left"></span><!--
-                --><span class="square"></span><!--
-                --><a href="inner2.html" class="right"></a>
+        <div class="inner-header">
+            <div id="owl-demo" class="inner-header owl-carousel owl-theme">
+
+                <div class="item"><img src="img/sliders/1/sh_1_r.png" /></div>
+                <div class="item"><img src="img/sliders/1/sh_2_r.png" /></div>
+                <div class="item"><img src="img/sliders/1/sh_3_r.png" /></div>
+                <div class="item"><img src="img/sliders/1/sh_4_r.png" /></div>
+                <div class="item"><img src="img/sliders/1/sh_5_r.png" /></div>
+
             </div>
+            <h1>Трагедия белок</h1>
         </div>
         <div class="inner-content">
-            <p>Динамичная мультиплеерная игра с веселыми Белками, спасающимися от катастрофы.
-                Ты бегаешь по разнообразным уровням вместе с толпой других Белочек,</p>
+            <p>Динамичная мультиплеерная игра с веселыми Белками, спасающимися от катастрофы. Ты бегаешь по разнообразным уровням вместе с толпой других Белочек, пытаясь добыть орех и добраться до дупла. Стань шаманом — спаси племя!</p>
         </div>
     </div>
 </main>
+<script>
+    $(document).ready(function() {
+
+        $("#owl-demo").owlCarousel({
+
+            navigation : true,
+            navigationText: ['', ''],
+            slideSpeed : 300,
+            pagination : false,
+            singleItem:true
+
+            // "singleItem:true" is a shortcut for:
+            // items : 1,
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+
+        });
+
+    });
+</script>
 </body>
 </html>
