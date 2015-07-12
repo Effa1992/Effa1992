@@ -426,6 +426,9 @@ main section:after {
     .social {
         display: none;
     }
+    main section {
+        height: 200px;
+    }
 }
 
 /**
