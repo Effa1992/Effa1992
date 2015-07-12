@@ -180,8 +180,28 @@ main section:after {
 }
 .inner-content {
     height: 100%;
-    padding: 40px 35px 10px;
+    padding: 40px 35px 50px;
     background: none #fff;
+    display: table;
+}
+
+.inner-content figure {
+    display: table;
+    margin: 40px 0 0  0;
+}
+
+.inner-content figcaption,
+.inner-content img {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0 30px 0 0;
+}
+
+.inner-content figcaption h2 {
+    margin: 0 0 10px 0;
+}
+.inner-content figcaption h3 {
+    margin: 0;
 }
 
 .slider {

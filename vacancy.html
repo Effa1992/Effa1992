@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Подключаем css reset
+     тут описано зачем это нужно - http://habrahabr.ru/post/45296/ -->
+    <link rel='stylesheet' type='text/css' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <title></title>
+</head>
+<body>
+<aside>
+    <a href="/" id="logo"></a>
+    <nav>
+        <a href="/" class="active">Игры</a>
+
+        <a href="inner.html">О нас</a>
+
+        <a href="vacancy.html">Вакансии</a>
+
+        <a href="inner.html">Форум</a>
+
+        <a href="contact.html">Контакты</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleNav();"></button>
+    <script>
+        function toggleNav () {
+            var nav = document.getElementsByTagName('nav')[0];
+            nav.className = nav.className == 'block' ? '' : 'block';
+        }
+    </script>
+    <div class="social">
+        <a href="http://twitter.com" class="twitter"></a><!--
+        --><a href="http://twitter.com" class="facebook"></a><!--
+        --><a href="http://twitter.com" class="google"></a><!--
+        --><a href="http://twitter.com" class="rss"></a>
+    </div>
+</aside>
+<main>
+    <div class="inner-content">
+        <h1>Вакансии</h1>
+
+        <p>Мы ищем людей, которые разделят с нами стремление создавать продукты, приносящие радость миллионам игроков. Если вам интересна творческая работа и вы во всем стараетесь придерживаться высоких стандартов, мы приглашаем вас к сотрудничеству.</p>
+
+        <ul>
+            <li><a href="#manager">Руководитель проекта</a></li>
+            <li><a href="#c">C++ developer</a></li>
+            <li><a href="#designer">Web-дизайнер</a></li>
+            <li><a href="#javascript">Javascript developer</a></li>
+        </ul>
+        <h2>По вопросам трудоустройства обращаться:</h2>
+        <p>Телефон: +7 (351) 248 84 63</p>
+        <p>E-mail: job@itsrealgames.com</p>
+        <figure>
+            <img src="img/vacancy/manager.png"/>
+            <figcaption>
+                <h2 id="manager">Руководитель проекта</h2>
+                <h3>Требования:</h3>
+                <ul>
+                    <li>Глубокие знания инструментов Аналитики (Google Analytics, Яндекс Метрика);</li>
+                    <li>Опыт в анализе и оптимизации конверсии сайта;</li>
+                    <li>Знание принципов и инструментов A/B тестирования страниц (Google Experiments, Optimizely);</li>
+                    <li>Знание Excel, Excel Pivot, MSSQL, MySQL;</li>
+                    <li>Знание и опыт в веб разработке: принципы usability, базовые знания технологий javascript, css, html, MVC.NET;</li>
+                    <li>Знание принципов email и дрип маркетинга;</li>
+                    <li>Опыт медиа планирования для выполнения плана по продуктам;</li>
+                    <li>Опыт оптимизации воронки продаж по интернет заявкам;</li>
+                    <li>Опыт работы с контекстными площадками (Яндекс Директ, Google Adwords);</li>
+                    <li>Опыт и знания по SEO для контроля подрядчика.</li>
+                </ul>
+            </figcaption>
+        </figure>
+        <figure>
+            <figcaption>
+                <h2 id="c">C++ developer</h2>
+                <h3>Требования:</h3>
+                <ul>
+                    <li>Опыт программирования на С+ для Unix (желательно‚ для платформы IBM AIX).</li>
+                    <li>Опыт разработки по профилю от 2 лет</li>
+                    <li>Образование высшее техническое</li>
+                    <li>Английский - уровень не ниже Upper-Intermediate</li>
+                    <li>Желателен опыт работы с JAVA‚ Oracle‚ MQSerie</li>
+                </ul>
+            </figcaption>
+            <img src="img/vacancy/c.png"/>
+        </figure>
+        <figure>
+            <img src="img/vacancy/ps.png"/>
+            <figcaption>
+                <h2 id="designer">Web-дизайнер</h2>
+                <h3>Требования:</h3>
+                <ul>
+                    <li>Опыт работы от 2-х лет;</li>
+                    <li>Опыт дизайна мобильных интерфейсов: iOS‚ Android;</li>
+                    <li>Понимание стандартов Andoird UI‚ iOS UI‚web UI;</li>
+                    <li>Разработка макетов landing page;</li>
+                    <li>Понимание‚ что такое адаптивный веб-дизайн и как его делать;</li>
+                    <li>Опыт оформления мобильных приложений;</li>
+                    <li>Умение не только выполнять задачи‚ но и инициировать их;</li>
+                    <li>Умение работать как "с нуля"‚ так и по сформированным гайдлайнам.</li>
+                </ul>
+            </figcaption>
+        </figure>
+        <figure>
+            <figcaption>
+                <h2 id="javascript">Javascript developer</h2>
+                <h3>Требования:</h3>
+                <ul>
+                    <li>Хорошее знание JavaScript</li>
+                    <li>Понимание принципов ООП в JavaScript</li>
+                    <li>Хорошее знание HTML/ CSS</li>
+                    <li>Умение работать в команде и планировать свои трудозатраты</li>
+                    <li>Как плюс:</li>
+                    <li>Высшее техническое образование</li>
+                    <li>Опыт работы с Backbone / Angular / React</li>
+                    <li>Grunt, Webpack</li>
+                    <li>Знание ASP.NET MVC фреймворка</li>
+                    <li>Понимание принципов адаптивной верстки, опыт разработки для мобильных устройств</li>
+                </ul>
+            </figcaption>
+            <img src="img/vacancy/javascript.png"/>
+        </figure>
+    </div>
+</main>
+</body>
+</html>
