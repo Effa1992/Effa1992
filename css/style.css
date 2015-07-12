@@ -60,7 +60,7 @@ ul li {
 }
 aside {
     width: 300px;
-    position: fixed;
+    position: absolute;
 }
 
 aside nav {
@@ -269,7 +269,7 @@ main section:after {
     position: absolute;
     width: 148px;
     left: 70px;
-    bottom: 100px;
+    top: 550px;
 }
 
 .social a {
