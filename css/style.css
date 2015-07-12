@@ -99,6 +99,7 @@ main section {
     max-width: 100%;
     height: 600px;
     position: relative;
+    margin: 0 0 124px 0;
 }
 
 main section:after {
@@ -108,7 +109,7 @@ main section:after {
     height: 124px;
     width: 100%;
     left: 0;
-    bottom: 0;
+    bottom: -124px;
 }
 
 .slide_1 {
@@ -378,12 +379,12 @@ main section:after {
         background-size: cover;
         width: 170px;
         height: 56px;
-        bottom: 55px;
+        bottom: -73px;
         right: 50%;
         margin: 0 -100px 0 0;
     }
     .other {
-        bottom: 10px;
+        bottom: -117px;
         right: 50%;
         margin: 0 -72px 0 0;
     }
@@ -447,12 +448,12 @@ main section:after {
     .google-play {
         left: 50%;
         margin: 0 0 0 -120px;
-        bottom: 23px;
+        bottom: -102px;
     }
 
 
     .other {
-        bottom: 40px;
+        bottom: -79px;
         right: 50px;
     }
 
