@@ -7,6 +7,18 @@
      тут описано зачем это нужно - http://habrahabr.ru/post/45296/ -->
     <link rel='stylesheet' type='text/css' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='css/carusel/owl.carousel.css'>
+    <link rel='stylesheet' type='text/css' href='css/carusel/owl.transitions.css'>
+    <link rel='stylesheet' type='text/css' href='css/carusel/owl.theme.css'>
+    <style>
+        #owl-demo .item img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <title></title>
 </head>
 <body>
@@ -33,17 +45,47 @@
 </aside>
 <main>
     <div class="inner">
-        <div class="inner-header slide_3">
-            <h1>Азориум</h1>
-            <div class="slider">
-                <a  href="inner2.html"  class="left"></a>
-                <a  href="inner4.html"  class="right"></a>
+        <div class="inner-header">
+            <div id="owl-demo" class="inner-header owl-carousel owl-theme">
+
+                <div class="item">
+                    <div style="background: url('img/work3.jpg') no-repeat scroll center/cover transparent;"></div>
+                </div>
+                <div class="item">
+                    <div style="background: url('img/sliders/3/az_r_1.jpg') no-repeat scroll center/cover transparent;"></div>
+                </div>
+                <div class="item">
+                    <div style="background: url('img/sliders/3/az_r_2.jpg') no-repeat scroll center/cover transparent;"></div>
+                </div>
+                <div class="item">
+                    <div style="background: url('img/sliders/3/az_r_3.jpg') no-repeat scroll center/cover transparent;"></div>
+                </div>
+                <div class="item">
+                    <div style="background: url('img/sliders/3/az_r_4.jpg') no-repeat scroll center/cover transparent;"></div>
+                </div>
+
             </div>
+            <h1>Азориум</h1>
         </div>
         <div class="inner-content">
             <p>Стань доблестным Капитаном и прими командование на себя! Вступай в борьбу за ресурсы и право называться лучшим Капитаном этой планеты! Только здесь тебя ждут увлекательные бои в реальном времени с другими игроками! Организуй оборону базы, прокачивай юнитов и особые способности.</p>
         </div>
     </div>
 </main>
+<script>
+    $(document).ready(function() {
+
+        $("#owl-demo").owlCarousel({
+
+            navigation : true,
+            navigationText: ['', ''],
+            slideSpeed : 300,
+            pagination : false,
+            singleItem:true
+
+        });
+
+    });
+</script>
 </body>
 </html>

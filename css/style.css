@@ -193,6 +193,12 @@ main section:after {
     color: #333;
     font: bold 30px/30px RalewaySemiBold;
 }
+
+.item div {
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
 .owl-controls {
     position: absolute;
     bottom: 47px;
