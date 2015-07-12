@@ -134,6 +134,10 @@ main section:after {
 }
 
 .other {
+    z-index: 1;
+}
+
+.button {
     font: 14px/18px RalewaySemiBold;
     color: #000;
     text-decoration: none;
@@ -144,6 +148,8 @@ main section:after {
     padding: 6px 14px;
     border-radius: 15px;
     z-index: 1;
+    word-spacing: normal;
+    letter-spacing: normal;
 }
 
 #map-wrapper {
@@ -185,10 +191,14 @@ main section:after {
     display: table;
     width: 100%;
 }
+.inner-content p {
+    padding: 0 25px 0 0;
+}
 
 .inner-content figure {
     display: table;
     margin: 40px 0 0  0;
+    padding: 0 25px 0 0;
 }
 
 .inner-content figcaption,
@@ -203,6 +213,11 @@ main section:after {
 }
 .inner-content figcaption h3 {
     margin: 0;
+}
+
+.vacancy-list {
+    width: 100%;
+    letter-spacing: 3px;
 }
 
 .slider {
