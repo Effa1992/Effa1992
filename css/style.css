@@ -183,6 +183,7 @@ main section:after {
     padding: 40px 35px 50px;
     background: none #fff;
     display: table;
+    width: 100%;
 }
 
 .inner-content figure {
